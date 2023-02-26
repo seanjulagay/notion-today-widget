@@ -1,4 +1,7 @@
 <html> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
 <head>
     <title>Date Widget Notion</title> 
     <style>
@@ -24,6 +27,7 @@
       #date{
           font-size:12pt;
           font-weight: bold;
+          font-family: 'PT Serif', serif;
       }
 
       body{
@@ -58,11 +62,11 @@
     var greet;
 
     if (hrs < 12)
-        greet = 'Good morning, Sean.  ';
+        greet = 'good morning, sean.  ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good afternoon, Sean ';
+        greet = 'good afternoon, sean ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good evening, Sean  ';
+        greet = 'good evening, sean  ';
 
     document.getElementById('lbl').innerHTML = `
         <div class="container">
